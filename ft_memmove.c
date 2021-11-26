@@ -6,7 +6,7 @@
 /*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 21:35:16 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/18 23:25:46 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/11/25 02:27:07 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memmove(void *dst, const void *src, int len)
 
 	str1 = (char *)dst;
 	str2 = (char *)src;
+	if (str1 == NULL && str2 == NULL)
+		return (NULL);
 	i = 0;
 	if (str1 > str2)
 	{
