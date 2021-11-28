@@ -6,7 +6,7 @@
 /*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 20:30:55 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/25 02:24:52 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/11/28 15:36:00 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 
 void	*ft_memcpy(void	*dst, const void *src, size_t n)
 {
-	int			i;
-	char		*str1;
-	char		*str2;
-
+	int		i;
+	char	*str1;
+	char	*str2;
 
 	i = 0;
 	str1 = (char *)dst;
 	str2 = (char *)src;
 	if (str1 == NULL && str2 == NULL)
 		return (NULL);
-	while (n != 0)
+	while (n > 0)
 	{
 		str1[i] = str2[i];
 		i++;
@@ -32,3 +31,14 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+/*
+int main(void)
+{
+	char str[] =  "123456789";
+	char *dst;
+
+	dst = (char *)ft_memcpy(str + 2, str, 4);
+	printf("%s", dst);
+	return 0;
+}
+*/
