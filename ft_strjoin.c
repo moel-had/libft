@@ -6,7 +6,7 @@
 /*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:19:09 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/18 21:31:09 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/11/29 21:17:03 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (str == NULL)
 		return (NULL);
-	memmove(str, s1, len1);
-	memmove(str + len1, s2, len2);
+	ft_memmove(str, s1, len1);
+	ft_memmove(str + len1, s2, len2);
 	str[len1 + len2] = '\0';
 	return (str);
 }
