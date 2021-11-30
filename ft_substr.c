@@ -6,7 +6,7 @@
 /*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 02:40:13 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/16 18:33:52 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/11/30 21:32:15 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,25 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	size_t	n;
 	char	*str;
+	size_t	i;
+	size_t	len_s;
 
 	if (s == NULL)
 		return (NULL);
-	str = malloc(sizeof(char) * (len + 1));
+	len_s = ft_strlen(s);
+	if (len >= len_s)
+		len = len_s;
+	if (start >= len_s)
+		return (ft_strdup(""));
+	str = malloc(len + 1);
 	if (str == NULL)
 		return (NULL);
-	n = 0;
-	while (s[n] != '\0')
-		n++;
 	i = 0;
-	if (start < n)
+	while (i < len)
 	{
-		while (s[start] != '\0' && i < len)
-		{
-			str[i] = s[start];
-			i++;
-			start++;
-		}
+		str[i] = s[start + i];
+		i++;
 	}
 	str[i] = '\0';
 	return (str);
