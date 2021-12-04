@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 19:47:08 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/21 00:36:47 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/01 21:57:54 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*
-void	ft_function(unsigned int i, char *str)
-{
-	(void)i;
-	*str += 1;
-	printf("|%s|\n", str);
-}
-
-int main()
-{
-	char	str[] = "0a2345678b";
-	ft_striteri(str, ft_function);
-	printf("%s\n", str);
-}
-*/

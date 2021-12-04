@@ -6,7 +6,7 @@
 #    By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/13 02:54:52 by moel-had          #+#    #+#              #
-#    Updated: 2021/11/30 21:37:17 by moel-had         ###   ########.fr        #
+#    Updated: 2021/12/04 00:46:55 by moel-had         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,15 +26,15 @@ OBJ = $(SRCS:%.c=%.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar -rcs $(NAME) $(OBJ)
+	ar -rc $(NAME) $(OBJ)
 
 %.o:%.c libft.h
-	$(CC) $(CFLAGS) -c $< -o $@
+		$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	@rm -rf $(OBJ)
+	rm -rf $(OBJ)
 
 fclean: clean
-	@rm $(NAME)
+	rm -rf $(NAME)
 
 re: fclean all

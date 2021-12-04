@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 23:13:39 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/25 01:37:30 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/01 21:57:50 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-/*
-char	*ft_function(unsigned int i, char c)
-{
-	return (c + i);
-}
-
-int	main()
-{
-	char	str[] = "abcdefgh";
-	char	*res = ft_strmapi(str, ft_function);
-	printf("%s\n", res);
-}
-*/

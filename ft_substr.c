@@ -6,7 +6,7 @@
 /*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 02:40:13 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/30 21:32:15 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/01 14:27:53 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = len_s;
 	if (start >= len_s)
 		return (ft_strdup(""));
-	str = malloc(len + 1);
+	str = malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
 	i = 0;

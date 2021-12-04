@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 13:55:33 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/17 17:09:15 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/01 21:25:34 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_len(int nbr)
+static int	ft_len(int nbr)
 {
 	int	i;
 

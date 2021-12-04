@@ -6,7 +6,7 @@
 /*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 22:04:16 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/16 18:33:38 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/11/30 21:46:02 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	while (i >= 0)
 	{
-		if (str[i] == c)
+		if (str[i] == ca)
 			return (str + i);
 		i--;
 	}
-	return (0);
+	return (NULL);
 }

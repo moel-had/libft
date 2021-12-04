@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 20:30:55 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/28 15:36:00 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/04 00:43:31 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ void	*ft_memcpy(void	*dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-int main(void)
-{
-	char str[] =  "123456789";
-	char *dst;
-
-	dst = (char *)ft_memcpy(str + 2, str, 4);
-	printf("%s", dst);
-	return 0;
-}
-*/

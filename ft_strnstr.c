@@ -6,7 +6,7 @@
 /*   By: moel-had <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/28 19:54:44 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/28 20:37:25 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/03 23:46:57 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main()
-{
-	char	s[] = "Hello World!!!!!";
-	char	str[] = "World";
-
-	printf("%s\n", ft_strnstr(s, str, 10));
-}
-*/

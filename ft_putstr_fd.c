@@ -6,7 +6,7 @@
 /*   By: moel-had <moel-had@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 20:19:36 by moel-had          #+#    #+#             */
-/*   Updated: 2021/11/27 18:47:15 by moel-had         ###   ########.fr       */
+/*   Updated: 2021/12/01 21:56:37 by moel-had         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-/*
-#include <fcntl.h>
-#include <unistd.h>
-
-int	main()
-{
-	int	fd = open("test", O_WRONLY);
-	ft_putstr_fd("mounir", fd);
-}
-*/
